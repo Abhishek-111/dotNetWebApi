@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.Xml;
 using System.Threading.Tasks;
 
 namespace SampleWebAPI.Controllers
@@ -11,5 +12,10 @@ namespace SampleWebAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public async Task<ActionResult> RandomMethod()
+        {
+            string name = "Abhi";
+            return Ok(new {message = "okok"});
+        }
     }
 }
