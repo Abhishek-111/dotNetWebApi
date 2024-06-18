@@ -11,5 +11,9 @@ namespace SampleWebAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public Task<IActionResult> Method1()
+        {
+            return Ok();
+        }
     }
 }
