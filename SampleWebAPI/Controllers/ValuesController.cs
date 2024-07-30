@@ -12,7 +12,11 @@ namespace SampleWebAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-       
+        public async Task<ActionResult> AnySpecialMethod()
+        {
+            string name = "Abhi";
+            return Ok(new { message = "fine" });
+        }
         public async Task<ActionResult> RandomMethod1()
         {
             string name = "Abhi";
@@ -21,7 +25,7 @@ namespace SampleWebAPI.Controllers
         public async Task<ActionResult> RandomMethod2()
         {
             string name = "Abhi";
-            return Ok(new { message = "okok" });
+            return Ok(new {message = "okok"});
         }
     }
 }
